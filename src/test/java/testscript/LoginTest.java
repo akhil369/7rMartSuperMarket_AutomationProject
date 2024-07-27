@@ -6,13 +6,14 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.Test;
 
 import pages.LoginPage;
+import utilities.XlUtility;
 
 public class LoginTest extends Base
 {
 	@Test
 	public void verifyUserIsAbleToLoginWithValidUsernameAndValidPassword()
 	{
-		String userNameValue="admin";
+		String userNameValue=XlUtility.getString(1, 1, "LoginPage");
 		String passwordValue="admin";
 		LoginPage loginpage=new LoginPage(driver);
 		loginpage.enterUsernameOnUsernameField(userNameValue).enterPasswordOnPasswordField(passwordValue).clickOnSignInButton();

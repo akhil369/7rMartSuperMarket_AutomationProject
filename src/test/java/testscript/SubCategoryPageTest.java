@@ -20,6 +20,7 @@ public void verifyUserIsAbleToAddSubCategoryAndFileUpload() throws AWTException
         loginpage.verifyHomePageNavigated();
         SubCategoryPage subcategorypage=new SubCategoryPage(driver);
         subcategorypage.clickOnSubCategoryTile().clickNewButton().clickCategorySelectDropdown().dropDownToSelectCategory(categoryValue).enterSubCategoryName(subCatTextField).fileChoosen(fileValue);
+        
        
    }
 }
