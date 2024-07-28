@@ -8,8 +8,19 @@
       <methods>
       <include name="verifyUserIsUnAbleToLoginWithInvalidUsernameAndValidPassword"/>
       <exclude name="verifyUserIsUnAbleToLoginWithValidUsernameAndInvlaidPassword"/>
+      <include name="verifyUserIsAbleToEditUserTextInformations"/>
       </methods>
       </class>
+      
+       <class name=" ManageFooterTextPageTest ">
+       <methods>
+        <include name="verifyUserIsAbleToEditUserTextInformations"/>
+        </methods>
+      </class>
+      
+      
+      
+      
       
     </classes>
   </test> <!-- Test -->

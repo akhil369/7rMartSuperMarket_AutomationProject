@@ -31,9 +31,8 @@ public class LoginTest extends Base
 		loginpage.enterPasswordOnPasswordField(passwordValue);
 		loginpage.enterUsernameOnUsernameField(userNameValue).enterPasswordOnPasswordField(passwordValue).clickOnSignInButton();
 		boolean isAlertMessageDisplay=loginpage.verifyHomePageNotNavigated();
-		/*boolean isNavigatedToHomepage=loginpage.verifyHomePageNavigated();*/
 		assertTrue(isAlertMessageDisplay," User is able to login to the homepage even if the username is correct and password is incorrect");
-		/*assertFalse(isNavigatedToHomepage,"User is not able to navigate to homepage even if alert message display");*/
+		
 	}
 	@Test
 	public void verifyUserIsUnAbleToLoginWithInvalidUsernameAndValidPassword()
@@ -45,9 +44,8 @@ public class LoginTest extends Base
 		loginpage.enterPasswordOnPasswordField(passwordValue);
 		loginpage.enterUsernameOnUsernameField(userNameValue).enterPasswordOnPasswordField(passwordValue).clickOnSignInButton();
 		boolean isAlertMessageDisplay=loginpage.verifyHomePageNotNavigated();
-		/*boolean isNavigatedToHomepage=loginpage.verifyHomePageNavigated();*/
 		assertTrue(isAlertMessageDisplay," User is able to login to the homepage even if the username is incorrect and password is correct");
-		/*assertFalse(isNavigatedToHomepage,"User is not able to navigate to homepage even if alert message display");*/
+		
 	}
 	@Test
 	public void verifyUserIsAbleToLoginWithInValidUsernameAndInvalidPassword() 
@@ -59,9 +57,8 @@ public class LoginTest extends Base
 		loginpage.enterPasswordOnPasswordField(passwordValue);
 		loginpage.enterUsernameOnUsernameField(userNameValue).enterPasswordOnPasswordField(passwordValue).clickOnSignInButton();
 		boolean isAlertMessageDisplay=loginpage.verifyHomePageNotNavigated();
-		/*boolean isNavigatedToHomepage=loginpage.verifyHomePageNavigated();*/
 		assertTrue(isAlertMessageDisplay," User is able to login to the homepage even if the username is incorrect and password is incorrect");
-		/*assertFalse(isNavigatedToHomepage,"User is not able to navigate to homepage even if alert message display");*/
+		
 	}
 	
 

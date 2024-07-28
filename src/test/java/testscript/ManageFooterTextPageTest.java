@@ -4,12 +4,13 @@ import org.testng.annotations.Test;
 
 import pages.LoginPage;
 import pages.ManageFooterTextPage;
+import utilities.XlUtility;
 
 public class ManageFooterTextPageTest extends Base {
 	@Test
 	public void verifyUserIsAbleToEditUserTextInformations()
 	{
-		 String userNameValue = "admin";
+		 String userNameValue = XlUtility.getString(1,1,"ManageFooterTextPage");
 	     String passwordValue = "admin";
 	     String addressValue = "Plavelil House, Puthenpurackal, Kadapra p.o., Kumbanad";
 	     String emailValue = "example@example.com";
