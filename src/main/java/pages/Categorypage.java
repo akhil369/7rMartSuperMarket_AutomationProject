@@ -15,7 +15,7 @@ public class Categorypage {
 	public WebDriver driver;
 	public Categorypage(WebDriver driver)
 	{
-		this.driver=driver;
+		this.driver=driver;	
 		PageFactory.initElements(driver,this);
 	}
 	

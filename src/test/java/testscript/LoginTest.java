@@ -10,7 +10,7 @@ import utilities.XlUtility;
 
 public class LoginTest extends Base
 {
-	@Test
+	@Test(description="This is for verifying loginpage with valid credentials ",groups= {"Smoke"})
 	public void verifyUserIsAbleToLoginWithValidUsernameAndValidPassword()
 	{
 		String userNameValue=XlUtility.getString(1, 1, "LoginPage");
@@ -21,7 +21,7 @@ public class LoginTest extends Base
 		assertTrue(isNavigatedToHomepage,"Not navigated to homepage even if username and password is correct");
 
 	}
-	@Test
+	@Test(groups= {"Regression"})
 	public void verifyUserIsUnAbleToLoginWithValidUsernameAndInvlaidPassword()
 	{
 		String userNameValue="admin";

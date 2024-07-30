@@ -7,13 +7,13 @@
 <listener class-name="listners.Listners" />
 </listeners>
   <test thread-count="5" name="Test">
+  <groups>
+   <run>	
+	<include name="Regression"></include>	
+	</run>
+    </groups>
     <classes>
-       <class name="testscript.AdminUsersTest">
-      <methods>
-      <include name="verifyUserIsAbleToAddUserType"/>
       
-      </methods>
-      </class>
       
       <class name="testscript.LoginTest">
       <methods>
@@ -22,12 +22,7 @@
       </methods>
       </class>
       
-      <class name="testscript.SubCategoryPageTest">
-      <methods>
-      <include name="verifyUserIsAbleToAddSubCategoryAndFileUpload"/>
-      
-      </methods>
-      </class>
+     
        </classes>
        
   </test> <!-- Test -->

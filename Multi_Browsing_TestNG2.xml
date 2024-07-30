@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-<parameter name="Browser" value="chrome">
-</parameter>
+<suite name="MultiBrowsing" parallel="tests" thread-count="2">
+
+
 <listeners>
 <listener class-name="listners.Listners" />
 </listeners>
-  <test thread-count="5" name="Test">
+  <test  name="ChromeTest">
+  <parameter name="Browser" value="firefox">
+</parameter>
     <classes>
-       <class name="testscript.AdminUsersTest">
-      <methods>
-      <include name="verifyUserIsAbleToAddUserType"/>
-      
-      </methods>
-      </class>
+     
       
       <class name="testscript.LoginTest">
       <methods>
@@ -22,14 +19,27 @@
       </methods>
       </class>
       
-      <class name="testscript.SubCategoryPageTest">
-      <methods>
-      <include name="verifyUserIsAbleToAddSubCategoryAndFileUpload"/>
-      
-      </methods>
-      </class>
+     
        </classes>
        
   </test> <!-- Test -->
+  <test  name="EdgeTest">
+  <parameter name="Browser" value="edge">
+</parameter>
+    <classes>
+     
+      
+      <class name="testscript.LoginTest">
+      <methods>
+      <include name="verifyUserIsUnAbleToLoginWithInvalidUsernameAndValidPassword"/>
+      
+      </methods>
+      </class>
+      
+     
+       </classes>
+       
+  </test> <!-- Test -->
+
 
 </suite> <!-- Suite -->
