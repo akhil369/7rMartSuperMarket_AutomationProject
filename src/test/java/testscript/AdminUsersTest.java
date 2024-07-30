@@ -12,8 +12,8 @@ public class AdminUsersTest extends Base{
 
 		String userNameValue="admin";
 		String passwordValue="admin";
-		String userNameValueText="admin";
-		String passwordValueText="admin";
+		String userNameValueText="admintest123";
+		String passwordValueText="admin@123";
 		String userTypeValue="db";
 		LoginPage loginpage=new LoginPage(driver).enterUsernameOnUsernameField(userNameValue).enterPasswordOnPasswordField(passwordValue).clickOnSignInButton();
 		AdminUsers adminusers=new AdminUsers(driver);

@@ -9,7 +9,7 @@ import pages.LoginPage;
 
 public class CategorypageTest extends Base{
 	@Test
-	public void verifyUserIsAbleToDragAndDropAndFileUpload() throws AWTException
+	public void verifyUserIsAbleToFileUpload() throws AWTException
 	{
 		String userNameValue="admin";
 		String passwordValue="admin";

@@ -1,11 +1,14 @@
 package pages;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.google.j2objc.annotations.RetainedLocalRef;
+
 
 import utilities.PageUtility;
 
@@ -25,6 +28,8 @@ public class AdminUsers {
 @FindBy(xpath = "//input[@id='password']") WebElement passwordTextField;
 @FindBy(xpath = "//select[@id='user_type']") WebElement selectDropdown;
 @FindBy(xpath = "//button[@name='Create']") WebElement saveButton;
+@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']//td[1]") List<WebElement>  userTypeTable;
+
 
 
 
@@ -60,12 +65,24 @@ public AdminUsers saveButtonClick()
 	saveButton.click();
 	return this;
 }
-
-
-
-
-
-
-
-
+public boolean  verifyUserTypeIsPresentInList(String userType  )
+{
+	 
+	for (WebElement userTypeElement : userTypeTable)
+	   {
+		 if (userTypeElement.getText().equals(userType)) {
+             return true;
+		   }
+	   }
+	return false;
+	   
 }
+}
+
+
+
+
+
+
+
+
