@@ -8,19 +8,14 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      
-      
       <class name="testscript.SubCategoryPageTest">
-      
-      
-     
       </class>
-      <class name="testscript.ManageFooterTextPageTest"></class>
-      
-      
-      
-       </classes>
-       
-  </test> <!-- Test -->
-
-</suite> <!-- Suite -->
+      <class name="testscript.ManageFooterTextPageTest">
+      </class>
+      <class name="testscript.CategorypageTest">
+       </class>
+       <class name="testscript.ManageContactPageTest">
+      </class>
+      </classes>
+    </test> <!-- Test -->
+    </suite> <!-- Suite -->

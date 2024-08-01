@@ -19,14 +19,15 @@ public class SubCategoryPage {
 	}
 	
 	
-	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-sub-category']//child::i[@class='fas fa-arrow-circle-right']") WebElement subCategoryTile;
-	@FindBy(xpath="//a[@onclick='click_button(1)']") WebElement newButton;
-	@FindBy(xpath="//select[@name='cat_id']") WebElement selectDropdown;
-	@FindBy(xpath="//select[@class='form-control selectpicker']") WebElement dropDownClick;
-	@FindBy(xpath="//input[@id='subcategory']") WebElement subCategory;
-	@FindBy(xpath="//input[@id='main_img']") WebElement chooseFile;
-	@FindBy(xpath="//button[@type='submit']") WebElement saveButton;
-	@FindBy(xpath="//input[@type='file']") WebElement fileClick;
+	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-sub-category']//child::i[@class='fas fa-arrow-circle-right']")private WebElement subCategoryTile;
+	@FindBy(xpath="//a[@onclick='click_button(1)']")private WebElement newButton;
+	@FindBy(xpath="//select[@name='cat_id']")private WebElement selectDropdown;
+	@FindBy(xpath="//select[@class='form-control selectpicker']")private WebElement dropDownClick;
+	@FindBy(xpath="//input[@id='subcategory']")private WebElement subCategory;
+	@FindBy(xpath="//input[@type='file']")private WebElement chooseFile;
+	@FindBy(xpath="//button[@type='submit']")private WebElement saveButton;
+	
+	
 	
 	
 	public SubCategoryPage clickOnSubCategoryTile()
@@ -66,6 +67,12 @@ public class SubCategoryPage {
 	  return this;
 	
     }
+	public SubCategoryPage saveButtonClick()
+	{
+		saveButton.click();
+		return this;
+	}
+	
 	
 	
 

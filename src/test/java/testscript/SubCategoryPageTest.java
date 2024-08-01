@@ -19,7 +19,8 @@ public void verifyUserIsAbleToAddSubCategoryAndFileUpload() throws AWTException
 		LoginPage loginpage=new LoginPage(driver).enterUsernameOnUsernameField(userNameValue).enterPasswordOnPasswordField(passwordValue).clickOnSignInButton();
         loginpage.verifyHomePageNavigated();
         SubCategoryPage subcategorypage=new SubCategoryPage(driver);
-        subcategorypage.clickOnSubCategoryTile().clickNewButton().clickCategorySelectDropdown().dropDownToSelectCategory(categoryValue).enterSubCategoryName(subCatTextField).fileChoosen(fileValue);
+        subcategorypage.clickOnSubCategoryTile().clickNewButton().clickCategorySelectDropdown().dropDownToSelectCategory(categoryValue).enterSubCategoryName(subCatTextField).fileChoosen(fileValue).saveButtonClick();
+        
         
        
    }

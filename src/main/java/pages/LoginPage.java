@@ -17,11 +17,11 @@ public class LoginPage {
 	}
 	
 	
-	@FindBy(xpath="//input[@name='username']") WebElement userNameTextField;
-	@FindBy(xpath="//input[@name='password']") WebElement passwordTextField;
-	@FindBy(xpath="//button[@class='btn btn-dark btn-block']") WebElement signInButton;
-	@FindBy(xpath="//a[text()='Home']") WebElement homePageCheck;
-	@FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']") WebElement errorMessageExist;
+	@FindBy(xpath="//input[@name='username']") private WebElement userNameTextField;
+	@FindBy(xpath="//input[@name='password']") private WebElement passwordTextField;
+	@FindBy(xpath="//button[@class='btn btn-dark btn-block']")private  WebElement signInButton;
+	@FindBy(xpath="//a[text()='Home']")private WebElement homePageCheck;
+	@FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']")private WebElement errorMessageExist;
 	  
 	
 	public LoginPage enterUsernameOnUsernameField(String username) 

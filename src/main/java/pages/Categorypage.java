@@ -19,14 +19,14 @@ public class Categorypage {
 		PageFactory.initElements(driver,this);
 	}
 	
-	@FindBy(xpath="//p[text()='Category']//parent::div[@class='inner']//following-sibling::a[@href='https://groceryapp.uniqassosiates.com/admin/list-category']") WebElement categoryTile;
-	@FindBy(xpath="//a[@onclick='click_button(1)']") WebElement newButton;
-	@FindBy(xpath="//input[@id='category']") WebElement categoryTextField;
-	@FindBy(xpath ="//ul[@class=\"ms-list\"]//child::li[@id='134-selectable']") WebElement groupOne;
-	@FindBy(xpath = "//input[@type='file']") WebElement uploadButton;
-	@FindBy(xpath ="//input[@name='top_menu']//ancestor::div[@class='col-md-4']") WebElement radioButtonTopMenu;
-	@FindBy(xpath ="//input[@name='show_home']//ancestor::div[@class='col-md-4']") WebElement radioButtonLeftMenu;
-	@FindBy(xpath="//button[@type='submit']") WebElement saveButton;
+	@FindBy(xpath="//p[text()='Category']//parent::div[@class='inner']//following-sibling::a[@href='https://groceryapp.uniqassosiates.com/admin/list-category']") private WebElement categoryTile;
+	@FindBy(xpath="//a[@onclick='click_button(1)']")private WebElement newButton;
+	@FindBy(xpath="//input[@id='category']")private WebElement categoryTextField;
+	@FindBy(xpath ="//ul[@class=\"ms-list\"]//child::li[@id='134-selectable']")private WebElement groupOne;
+	@FindBy(xpath = "//input[@type='file']") private WebElement uploadButton;
+	@FindBy(xpath ="//input[@name='top_menu']//ancestor::div[@class='col-md-4']")private WebElement radioButtonTopMenu;
+	@FindBy(xpath ="//input[@name='show_home']//ancestor::div[@class='col-md-4']")private WebElement radioButtonLeftMenu;
+	@FindBy(xpath="//button[@type='submit']")private WebElement saveButton;
 	
 	
 

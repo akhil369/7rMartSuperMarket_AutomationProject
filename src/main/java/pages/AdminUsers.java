@@ -1,11 +1,14 @@
 package pages;
 
+import java.util.List;
+
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.google.j2objc.annotations.RetainedLocalRef;
+
 
 import utilities.PageUtility;
 
@@ -19,12 +22,14 @@ public class AdminUsers {
 
 
 
-@FindBy(xpath = "//p[text()='Admin Users']//parent::div[@class='inner']//following-sibling::a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin']") WebElement adminUsersTile;
-@FindBy(xpath = "//a[@onclick='click_button(1)']") WebElement newButtonClick;
-@FindBy(xpath = "//input[@id='username']") WebElement usernameTextField;
-@FindBy(xpath = "//input[@id='password']") WebElement passwordTextField;
-@FindBy(xpath = "//select[@id='user_type']") WebElement selectDropdown;
-@FindBy(xpath = "//button[@name='Create']") WebElement saveButton;
+@FindBy(xpath = "//p[text()='Admin Users']//parent::div[@class='inner']//following-sibling::a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin']")  private WebElement adminUsersTile;
+@FindBy(xpath = "//a[@onclick='click_button(1)']") private WebElement newButtonClick;
+@FindBy(xpath = "//input[@id='username']") private WebElement usernameTextField;
+@FindBy(xpath = "//input[@id='password']") private WebElement passwordTextField;
+@FindBy(xpath = "//select[@id='user_type']") private WebElement selectDropdown;
+@FindBy(xpath = "//button[@name='Create']") private  WebElement saveButton;
+@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']//td[1]") private List<WebElement>  userTypeTable;
+
 
 
 
@@ -60,12 +65,25 @@ public AdminUsers saveButtonClick()
 	saveButton.click();
 	return this;
 }
-
-
-
-
-
-
-
-
+public boolean  verifyUserTypeIsPresentInList()
+{
+	 boolean flag=false;
+	for (WebElement userTypeElement : userTypeTable)
+	   {
+		String textName=userTypeElement.getText();
+		 if (textName.equals("admintest123")) {
+             flag= true;
+		   }
+	   }
+	return flag;
+	   
 }
+}
+
+
+
+
+
+
+
+

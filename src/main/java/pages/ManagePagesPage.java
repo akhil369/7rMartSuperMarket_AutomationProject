@@ -13,11 +13,11 @@ public class ManagePagesPage {
 		PageFactory.initElements(driver,this);
 	}
 	
-	@FindBy(xpath="//i[@class='fas fa-arrow-circle-right']//parent::a[@href='https://groceryapp.uniqassosiates.com/admin/list-page']") WebElement verifyManagePagesTile;
-	@FindBy(xpath="//li[@class='breadcrumb-item active']//parent::ol[@class='breadcrumb float-sm-right']") WebElement verifyListPages;
-	@FindBy(xpath="//a[@class='btn btn-rounded btn-primary']") WebElement searchButton;
-	@FindBy(xpath="//input[@placeholder='Title']") WebElement verifytitleTextField;
-	@FindBy(xpath="//button[@type='submit']" ) WebElement submitSearchButton;
+	@FindBy(xpath="//i[@class='fas fa-arrow-circle-right']//parent::a[@href='https://groceryapp.uniqassosiates.com/admin/list-page']")private WebElement verifyManagePagesTile;
+	@FindBy(xpath="//li[@class='breadcrumb-item active']//parent::ol[@class='breadcrumb float-sm-right']")private WebElement verifyListPages;
+	@FindBy(xpath="//a[@class='btn btn-rounded btn-primary']")private WebElement searchButton;
+	@FindBy(xpath="//input[@placeholder='Title']")private WebElement verifytitleTextField;
+	@FindBy(xpath="//button[@type='submit']" )private WebElement submitSearchButton;
 	
 	
 	

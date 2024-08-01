@@ -1,5 +1,7 @@
 package testscript;
 
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.Test;
 
 import pages.LoginPage;
@@ -17,6 +19,8 @@ public class ManageFooterTextPageTest extends Base {
 	     String phoneValue = "1234567890";
 	     LoginPage loginpage=new LoginPage(driver).enterUsernameOnUsernameField(userNameValue).enterPasswordOnPasswordField(passwordValue).clickOnSignInButton();
 	     ManageFooterTextPage managefootertextpage=new ManageFooterTextPage(driver).clickManageFooterTextPageTile().clickEditButton().scrollDown().enterAddressTextField(addressValue).enterEmailTextField(emailValue).enterPhoneNumberField(phoneValue).updateButtonClick();
+	     boolean isEditedAddressInList=managefootertextpage.verifyEditedAddressInList();
+	     assertTrue(isEditedAddressInList, "Edited Address is not present in the list");
 	     
 	}
 	

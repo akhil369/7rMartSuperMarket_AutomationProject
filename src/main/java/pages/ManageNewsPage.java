@@ -15,16 +15,16 @@ public class ManageNewsPage {
 	}
 	
 	
-	@FindBy(xpath="//i[@class='fas fa-arrow-circle-right']//parent::a[@href='https://groceryapp.uniqassosiates.com/admin/list-news']") WebElement manageNewsTile;
-	@FindBy(linkText ="Manage News") WebElement manageNewsPage;
-	@FindBy(xpath="//i[@class='fas fa-edit']//parent::a[@class='btn btn-rounded btn-danger']") WebElement newButton;
-	@FindBy(xpath="//textarea[@class='form-control']") WebElement enterTheNewsTextField;
-	@FindBy(xpath="//button[@type='submit']") WebElement saveButton;
-	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement messageSuccess;
-	@FindBy(xpath="//i[@class='fas fa-edit']//parent::a[@href='https://groceryapp.uniqassosiates.com/admin/news/edit?edit=1537&page_ad=1']") WebElement editButtonClick;
-	@FindBy(xpath="//textarea[@id='news']") WebElement editNewsTextField;
-	@FindBy(xpath="//button[@name='update']") WebElement updateButtonClick;
-	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement editMessageSuccess;
+	@FindBy(xpath="//i[@class='fas fa-arrow-circle-right']//parent::a[@href='https://groceryapp.uniqassosiates.com/admin/list-news']")private WebElement manageNewsTile;
+	@FindBy(linkText ="Manage News")private WebElement manageNewsPage;
+	@FindBy(xpath="//i[@class='fas fa-edit']//parent::a[@class='btn btn-rounded btn-danger']")private WebElement newButton;
+	@FindBy(xpath="//textarea[@class='form-control']")private WebElement enterTheNewsTextField;
+	@FindBy(xpath="//button[@type='submit']")private WebElement saveButton;
+	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")private WebElement messageSuccess;
+	@FindBy(xpath="//i[@class='fas fa-edit']//parent::a[@href='https://groceryapp.uniqassosiates.com/admin/news/edit?edit=1537&page_ad=1']")private WebElement editButtonClick;
+	@FindBy(xpath="//textarea[@id='news']")private WebElement editNewsTextField;
+	@FindBy(xpath="//button[@name='update']")private WebElement updateButtonClick;
+	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")private WebElement editMessageSuccess;
 	
 	
 	
