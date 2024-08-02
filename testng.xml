@@ -14,9 +14,9 @@
       
       
       
-      <class name="testscript.ManageFooterTextPageTest">
+      <class name="testscript.AdminUsersTest">
       <methods>
-      <include name="verifyUserIsAbleToEditUserTextInformations"/>
+      <include name="verifyUserIsAbleToAddUserType"/>
       </methods>
       </class>
        

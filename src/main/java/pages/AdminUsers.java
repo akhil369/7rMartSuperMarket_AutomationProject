@@ -3,6 +3,8 @@ package pages;
 import java.util.List;
 
 
+import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -65,6 +67,7 @@ public AdminUsers saveButtonClick()
 	saveButton.click();
 	return this;
 }
+
 public boolean  verifyUserTypeIsPresentInList()
 {
 	 boolean flag=false;
@@ -76,8 +79,19 @@ public boolean  verifyUserTypeIsPresentInList()
 		   }
 	   }
 	return flag;
-	   
 }
+//public boolean  verifyUserTypeIsPresentInList(String userType)
+//{
+//	 
+//	for (WebElement userTypeElement : userTypeTable)
+//	   {
+//		 if (userTypeElement.getText().equals(userType)) {
+//             return true;
+//		   }
+//	   }
+//	return false;
+//	   
+//}
 }
 
 
