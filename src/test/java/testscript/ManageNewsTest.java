@@ -35,7 +35,7 @@ public class ManageNewsTest extends Base {
         loginpage.enterUsernameOnUsernameField(userNameValue).enterPasswordOnPasswordField(passwordValue).clickOnSignInButton();
         loginpage.verifyHomePageNavigated();
         ManageNewsPage managanewspage=new ManageNewsPage(driver);
-        managanewspage.clickOnManageNewsTile().clickOnEditButton().editNewsOnNewsTextField(newsContent).clickOnUpdateButton();
+        managanewspage.clickOnManageNewsTile().clickEditButton().editNewsOnNewsTextField(newsContent).clickOnUpdateButton();
         managanewspage.verifyManageNewsPageNavigated();
         boolean isNewsUpdated=managanewspage.verifyUpdatedNews();
         assertTrue(isNewsUpdated, "User edited news was not updated successfully");

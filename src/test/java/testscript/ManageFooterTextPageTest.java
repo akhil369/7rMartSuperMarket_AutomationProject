@@ -12,7 +12,7 @@ public class ManageFooterTextPageTest extends Base {
 	@Test
 	public void verifyUserIsAbleToEditUserTextInformations()
 	{
-		 String userNameValue = XlUtility.getString(1,1,"ManageFooterTextPage");
+		 String userNameValue = "admin";
 	     String passwordValue = "admin";
 	     String addressValue = "Plavelil House, Puthenpurackal, Kadapra p.o., Kumbanad";
 	     String emailValue = "example@example.com";

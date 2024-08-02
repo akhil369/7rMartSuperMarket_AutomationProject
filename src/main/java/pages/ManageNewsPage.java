@@ -21,7 +21,7 @@ public class ManageNewsPage {
 	@FindBy(xpath="//textarea[@class='form-control']")private WebElement enterTheNewsTextField;
 	@FindBy(xpath="//button[@type='submit']")private WebElement saveButton;
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")private WebElement messageSuccess;
-	@FindBy(xpath="//i[@class='fas fa-edit']//parent::a[@href='https://groceryapp.uniqassosiates.com/admin/news/edit?edit=1537&page_ad=1']")private WebElement editButtonClick;
+	@FindBy(xpath="//i[@class='fas fa-edit']//parent::a[@href='https://groceryapp.uniqassosiates.com/admin/news/edit?edit=1576&page_ad=1']")private WebElement editButtonClick;
 	@FindBy(xpath="//textarea[@id='news']")private WebElement editNewsTextField;
 	@FindBy(xpath="//button[@name='update']")private WebElement updateButtonClick;
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")private WebElement editMessageSuccess;
@@ -61,7 +61,7 @@ public class ManageNewsPage {
 		boolean isMessageSuccessVerified=messageSuccess.isDisplayed();
 		return isMessageSuccessVerified;
 	}
-	public ManageNewsPage clickOnEditButton()
+	public ManageNewsPage clickEditButton()
 	{
 		editButtonClick.click();
 		return this;
