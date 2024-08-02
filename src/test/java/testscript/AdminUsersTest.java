@@ -22,7 +22,7 @@ public class AdminUsersTest extends Base{
 		AdminUsers adminusers=new AdminUsers(driver);
 		adminusers.clickAdminUsersTile().newButtonClick().enterUsernameTextField(userNameValueText).enterPasswordTextField(passwordValueText).dropDownToSelectUserType(userTypeValue).saveButtonClick();
 		boolean isUsernameCreatedIsPresentInList=adminusers.verifyUserTypeIsPresentInList();
-		assertTrue(isUsernameCreatedIsPresentInList, "Username created is not present in the list");
+		assertTrue(isUsernameCreatedIsPresentInList, "Username created is not present in the listed");
 		
 		
 		
