@@ -8,26 +8,21 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-       <class name="testscript.AdminUsersTest">
-      <methods>
-      <include name="verifyUserIsAbleToAddUserType"/>
       
+     
+      
+      
+      
+      
+      <class name="testscript.ManageFooterTextPageTest">
+      <methods>
+      <include name="verifyUserIsAbleToEditUserTextInformations"/>
       </methods>
       </class>
+       
+       
       
-      <class name="testscript.LoginTest">
-      <methods>
-      <include name="verifyUserIsUnAbleToLoginWithInvalidUsernameAndValidPassword"/>
-      
-      </methods>
-      </class>
-      
-      <class name="testscript.SubCategoryPageTest">
-      <methods>
-      <include name="verifyUserIsAbleToAddSubCategoryAndFileUpload"/>
-      
-      </methods>
-      </class>
+     
        </classes>
        
   </test> <!-- Test -->

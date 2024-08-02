@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-02T17:46:55 IST" name="Suite" finished-at="2024-08-02T17:47:02 IST" duration-ms="7309">
+    <groups>
+    </groups>
+    <test started-at="2024-08-02T17:46:55 IST" name="Test" finished-at="2024-08-02T17:47:02 IST" duration-ms="7309">
+      <class name="testscript.ManageFooterTextPageTest">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testscript.ManageFooterTextPageTest@146dfe6]" started-at="2024-08-02T17:46:55 IST" name="initializeBrowser" finished-at="2024-08-02T17:46:59 IST" duration-ms="4554" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyUserIsAbleToEditUserTextInformations()[pri:0, instance:testscript.ManageFooterTextPageTest@146dfe6]" started-at="2024-08-02T17:46:59 IST" name="verifyUserIsAbleToEditUserTextInformations" finished-at="2024-08-02T17:47:02 IST" duration-ms="2390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToEditUserTextInformations -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageFooterTextPageTest@146dfe6]" started-at="2024-08-02T17:47:02 IST" name="browserQuit" finished-at="2024-08-02T17:47:02 IST" duration-ms="322" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserIsAbleToEditUserTextInformations status=SUCCESS method=ManageFooterTextPageTest.verifyUserIsAbleToEditUserTextInformations()[pri:0, instance:testscript.ManageFooterTextPageTest@146dfe6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testscript.ManageFooterTextPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
