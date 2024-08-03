@@ -23,7 +23,7 @@ public class ManageContactPageTest  extends Base{
 		ManageContactPage managecontactpage=new ManageContactPage(driver);
 		managecontactpage.clickManageContactTile().clickEditButton().enterPhoneNumber(phoneValue).enterEmail(emailValue).enterAddress(addressValue).enterDeliveryTime(deliveryTimeValue).enterDeliveryChargeTime(deliveryChargeValue).updateButtonClick();
 		boolean isUpdatedInformationsInList=managecontactpage.verifyEditedPhoneNumberInList();
-		assertTrue(isUpdatedInformationsInList, "User is not able to see updtaed informations");
+		assertTrue(isUpdatedInformationsInList, "User is not able to see updtaed informations from list");
 		
 				
 				
