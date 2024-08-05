@@ -6,14 +6,15 @@ import org.testng.annotations.Test;
 
 import pages.LoginPage;
 import pages.ManagePagesPage;
+import utilities.XlUtility;
 
 public class ManagePagesPageTest  extends Base{
 	@Test
 	public void verifyWhetherUserIsAbleToFindSearchedTitle()
 	{
-		String userNameValue="admin";
-		String passwordValue="admin";
-		String titleText="akhil";
+		String userNameValue=XlUtility.getString(1, 0, "ManagePagesPage");
+		String passwordValue=XlUtility.getString(1, 1, "ManagePagesPage");
+		String titleText=XlUtility.getString(1, 2, "ManagePagesPage");
 		LoginPage loginpage=new LoginPage(driver);
         loginpage.enterUsernameOnUsernameField(userNameValue);
         loginpage.enterPasswordOnPasswordField(passwordValue);

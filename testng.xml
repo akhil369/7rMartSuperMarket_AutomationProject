@@ -14,9 +14,9 @@
       
       
       
-      <class name="testscript.AdminUsersTest">
+      <class name="testscript.SubCategoryPageTest">
       <methods>
-      <include name="verifyUserIsAbleToAddUserType"/>
+      <include name="verifyUserIsAbleToAddSubCategoryAndFileUpload"/>
       </methods>
       </class>
        

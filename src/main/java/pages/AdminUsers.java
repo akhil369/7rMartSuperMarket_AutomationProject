@@ -74,24 +74,13 @@ public boolean  verifyUserTypeIsPresentInList()
 	for (WebElement userTypeElement : userTypeTable)
 	   {
 		String textName=userTypeElement.getText();
-		 if (textName.equals("admintest123")) {
+		 if (textName.equals("testingadmin")) {
              flag= true;
 		   }
 	   }
 	return flag;
 }
-//public boolean  verifyUserTypeIsPresentInList(String userType)
-//{
-//	 
-//	for (WebElement userTypeElement : userTypeTable)
-//	   {
-//		 if (userTypeElement.getText().equals(userType)) {
-//             return true;
-//		   }
-//	   }
-//	return false;
-//	   
-//}
+
 }
 
 

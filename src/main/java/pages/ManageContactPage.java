@@ -81,7 +81,7 @@ public class ManageContactPage {
 		for(WebElement phoneTypeElement : contactUsTable)
 		{
 			String textName=phoneTypeElement.getText();
-			 if (textName.equals("123456789")) {
+			 if (textName.equals("onetwo")) {
 	             flag= true;
 			   }
 		}

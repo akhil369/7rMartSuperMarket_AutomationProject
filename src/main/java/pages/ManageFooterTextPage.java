@@ -73,7 +73,7 @@ public class ManageFooterTextPage {
 		for (WebElement userTypeElement : footerTextTable)
 		   {
 			String textName=userTypeElement.getText();
-			 if (textName.equals("Plavelil House, Puthenpurackal, Kadapra p.o., Kumbanad")) {
+			 if (textName.equals("Plavelil House")) {
 	             flag= true;
 			   }
 		   }

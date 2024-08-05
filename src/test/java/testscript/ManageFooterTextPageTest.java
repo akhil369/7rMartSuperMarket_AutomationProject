@@ -12,11 +12,11 @@ public class ManageFooterTextPageTest extends Base {
 	@Test
 	public void verifyUserIsAbleToEditUserTextInformations()
 	{
-		 String userNameValue = "admin";
-	     String passwordValue = "admin";
-	     String addressValue = "Plavelil House, Puthenpurackal, Kadapra p.o., Kumbanad";
-	     String emailValue = "example@example.com";
-	     String phoneValue = "1234567890";
+		 String userNameValue = XlUtility.getString(1, 0, "ManageFooterTextPage");
+	     String passwordValue = XlUtility.getString(1, 1, "ManageFooterTextPage");
+	     String addressValue = XlUtility.getString(1, 2, "ManageFooterTextPage");
+	     String emailValue = XlUtility.getString(1, 3, "ManageFooterTextPage");
+	     String phoneValue = XlUtility.getString(1, 4, "ManageFooterTextPage");
 	     LoginPage loginpage=new LoginPage(driver).enterUsernameOnUsernameField(userNameValue).enterPasswordOnPasswordField(passwordValue).clickOnSignInButton();
 	     ManageFooterTextPage managefootertextpage=new ManageFooterTextPage(driver).clickManageFooterTextPageTile().clickEditButton().scrollDown().enterAddressTextField(addressValue).enterEmailTextField(emailValue).enterPhoneNumberField(phoneValue).updateButtonClick();
 	     boolean isEditedAddressInList=managefootertextpage.verifyEditedAddressInList();

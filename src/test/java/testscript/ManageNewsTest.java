@@ -6,14 +6,15 @@ import org.testng.annotations.Test;
 
 import pages.LoginPage;
 import pages.ManageNewsPage;
+import utilities.XlUtility;
 
 public class ManageNewsTest extends Base {
 	@Test
 	public void verifyUserIsAbleToAddNewsOnNewsTextField() 
 	{
-		String userNameValue="admin";
-		String passwordValue="admin";
-        String newsContent = "test news";
+		String userNameValue=XlUtility.getString(1, 0, "ManageNewsPage");
+		String passwordValue=XlUtility.getString(1, 1, "ManageNewsPage");
+        String newsContent = XlUtility.getString(1, 2, "ManageNewsPage");
         LoginPage loginpage=new LoginPage(driver);
         loginpage.enterUsernameOnUsernameField(userNameValue).enterPasswordOnPasswordField(passwordValue).clickOnSignInButton();
         loginpage.verifyHomePageNavigated();
@@ -28,9 +29,9 @@ public class ManageNewsTest extends Base {
 	@Test
 	public void verifyUserIsAbleToEditTextFromList()
       {
-		String userNameValue="admin";
-		String passwordValue="admin";
-        String newsContent = " test news updated";
+		String userNameValue=XlUtility.getString(2, 0, "ManageNewsPage");
+		String passwordValue=XlUtility.getString(2, 1, "ManageNewsPage");
+        String newsContent = XlUtility.getString(2, 2, "ManageNewsPage");
         LoginPage loginpage=new LoginPage(driver);
         loginpage.enterUsernameOnUsernameField(userNameValue).enterPasswordOnPasswordField(passwordValue).clickOnSignInButton();
         loginpage.verifyHomePageNavigated();
