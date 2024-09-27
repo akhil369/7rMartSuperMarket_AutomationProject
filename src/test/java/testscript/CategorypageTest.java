@@ -1,4 +1,4 @@
-package testscript;
+	package testscript;
 
 import java.awt.AWTException;
 

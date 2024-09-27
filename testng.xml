@@ -14,9 +14,9 @@
       
       
       
-      <class name="testscript.SubCategoryPageTest">
+      <class name="testscript.ManageContactPageTest">
       <methods>
-      <include name="verifyUserIsAbleToAddSubCategoryAndFileUpload"/>
+      <include name="verifyUserIsAbleToEditContactUsInformations"/>
       </methods>
       </class>
        
